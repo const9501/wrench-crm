@@ -1,0 +1,96 @@
+header {
+  background-color: #4F27BF;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    text-decoration: none;
+
+    img {
+      width: 48px;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+
+    span {
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.container {
+  $height: calc(100vh - 80px);
+  display: flex;
+  height: $height;
+  overflow: hidden;
+
+  aside {
+    float: left;
+    padding: 25px 0 25px 32px;
+    box-shadow: 0 0 5px rgba(2, 0, 96, 0.25);
+    min-width: 300px;
+    min-height: 100%;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  main {
+    width: 100%;
+    padding: 32px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #4F27BF;
+      border-radius: 5px 0 0 5px;
+      height: 120px;
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .activeLink {
+
+    &:after {
+      content: '';
+      width: 3px;
+      height: 30px;
+      background-color: #4F27BF;
+      margin-left: auto;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  .settingsContainer {
+
+    button {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      margin-top: 5px;
+      margin-left: 40px;
+      cursor: pointer;
+    }
+
+    .hiddenSettings {
+      display: none;
+    }
+
+    .visibleSettings {
+      display: block;
+      margin-left: auto;
+      width: 225px;
+
+      a {
+        margin-top: 32px;
+      }
+    }
+  }
+}

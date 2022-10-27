@@ -1,0 +1,8 @@
+.pageHeading {
+  font-size: 26px;
+  font-weight: 700;
+
+  @media screen and (max-width: 460px) {
+    font-size: 22px;
+  }
+}

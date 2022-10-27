@@ -1,0 +1,38 @@
+.container {
+  box-shadow: 0 2px 8px rgba(2, 0, 97, 0.25);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 10px;
+
+  h3 {
+    font-weight: 700;
+    font-size: 26px;
+
+    @media screen and (max-width: 460px) {
+      font-size: 20px;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .item {
+    font-size: 20px;
+    font-weight: 500;
+
+    @media screen and (max-width: 460px) {
+      font-size: 16px;
+    }
+  }
+
+  .separator {
+    height: 1px;
+    background-color: #D7D7D7;
+  }
+}
+
